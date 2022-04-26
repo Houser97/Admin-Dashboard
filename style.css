@@ -25,20 +25,38 @@
     display: grid;
     grid-template-rows: 0.1fr 0.5fr 0.3fr 1fr;
     gap: 36px;
-    padding: 30px;
+    padding: 22px;
 }
 
 .sidebar > div {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .sidebar .menu,
-.sidebar .settings,
-.dashboard{
+.sidebar .settings{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+.sidebar .menu .menu_sidebar,
+.sidebar .settings .menu_sidebar,
+.dashboard{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.sidebar .icon{
+    width: 30%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard .text{
+    font-size: 24px;
+}
