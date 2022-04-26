@@ -15,10 +15,11 @@
 
 .container{
     display: grid;
-    grid-template-rows: 0.2fr 0.2fr 1fr;
+    grid-template-rows: 0.01fr 0.2fr 1fr;
     grid-template-columns: 0.2fr 1fr;
 }
 
+/*---------Sidebar section---------*/
 .sidebar{
     background-color: var(--blue-sky);
     grid-row: 1/-1;
@@ -59,4 +60,23 @@
 
 #dashboard .text{
     font-size: 24px;
+}
+
+/* ----------- SEARCH section --------------*/
+.container .top_part{
+    grid-row: 1/3;
+    grid-column: 2/-1;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.container .search1{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
 }
