@@ -184,26 +184,34 @@ form button{
     grid-column: 2/-1;
     grid-row: 3/-1;
     background-color: rgba(0, 0,0, 0.2);
-}
-
-.container .body .body1{
     display: grid;
     grid-template-columns: 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    padding: 15px;
 }
+
+
 
 /*------contenedores interiores-------*/
 .project_container{
     display: grid;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 70px 1fr;
 }
 
-.body1 .left_sidebar{
+.body .left_sidebar{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
-.body1 .left_sidebar .announcements_first,
-.body1 .left_sidebar .trending{
+.body .left_sidebar .announcements_first,
+.body .left_sidebar .trending{
     display: grid;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 70px 1fr;
+}
+
+.title_trending,
+.title_announcements,
+.title_projects{
+    align-self: center;
+    justify-self: flex-start;
 }
