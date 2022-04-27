@@ -130,6 +130,7 @@ form button{
     grid-row: 2/3;
     grid-column: 2/-1;
     padding-right: 40px;
+
 }
 
 .container .top_part_second_part .user{
@@ -176,4 +177,33 @@ form button{
 .container .top_part_second_part .username .user{
     font-size: 20px;
     font-weight: 600;    
+}
+
+/*----------------------Body for the projects---------------------*/
+.container .body {
+    grid-column: 2/-1;
+    grid-row: 3/-1;
+    background-color: rgba(0, 0,0, 0.2);
+}
+
+.container .body .body1{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+}
+
+/*------contenedores interiores-------*/
+.project_container{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+}
+
+.body1 .left_sidebar{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.body1 .left_sidebar .announcements_first,
+.body1 .left_sidebar .trending{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
 }
