@@ -221,7 +221,7 @@ form button{
 .title_projects{
     align-self: center;
     justify-self: flex-start;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -246,11 +246,25 @@ form button{
 .project_container .projects .card{
     background-color: white;
     border-radius: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    height: 200px;
 
+    height: 150px;
     display: flex;
     flex-direction: column;
-    
+    padding: 40px 30px;
+}
+
+.projects .card .text{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project_container .card .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
 }
