@@ -15,7 +15,7 @@
 
 .container{
     display: grid;
-    grid-template-rows: 0.01fr 0.2fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
     grid-template-columns: 0.2fr 1fr;
 }
 
@@ -80,7 +80,7 @@
 /*--------- search bar ---------*/
 
 form{
-    width: 50%;
+    width: 65%;
     background-color: rgba(0, 0,0, 0.2);
     display: flex;
     align-items: center;
@@ -121,4 +121,59 @@ form button{
     margin-left: 30px;
     flex: 1;
     gap: 15px;
+}
+
+
+/*---------------------HEADER section 2------------------------*/
+
+.container .top_part_second_part{
+    grid-row: 2/3;
+    grid-column: 2/-1;
+    padding-right: 40px;
+}
+
+.container .top_part_second_part .user{
+    display: flex;
+}
+
+.container .user .first_section {
+    width: 50%;
+    display: flex;
+    
+    align-items: center;
+    gap: 40px;
+    padding: 5px;
+    padding-left: 40px;
+}
+
+.container .user .buttons {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    flex: 1;
+}
+
+.container .user .buttons > button{
+    width: 15%;
+    height: 40px;
+    min-width: 100px;
+    border-radius: 20px;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+/* para cambiar fuente de saludo*/
+.container .top_part_second_part .username{
+    font-size: 16px;
+    font-weight: 600;    
+}
+
+.container .top_part_second_part .username .user{
+    font-size: 20px;
+    font-weight: 600;    
 }
