@@ -1,5 +1,6 @@
 :root{
     --blue-sky: #0ea5e9;
+    --color-text-body:rgb(93, 93, 93);
 }
 
 html{
@@ -191,7 +192,7 @@ form button{
     display: grid;
     grid-template-columns: 1fr 0.3fr;
     grid-template-rows: 1fr;
-    padding: 15px;
+    padding: 10px;
 }
 
 
@@ -206,7 +207,7 @@ form button{
 
 .body .left_sidebar{
     display: grid;
-    grid-template-rows: 1fr 0.7fr;
+    grid-template-rows: minmax(300px,1fr) minmax(200px,0.8fr);
 }
 
 .body .left_sidebar .announcements_first,
@@ -226,14 +227,37 @@ form button{
     font-weight: 600;
 }
 
+/* texto de left sidebar*/
 .body_announcements,
 .body_trending{
     background-color: white;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.body_announcements .second{
+    border-top: 1px solid rgb(153, 152, 152);
+    border-bottom: 1px solid rgb(153, 152, 152);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.body_announcements .title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.body_announcements .text {
+ color: var(--color-text-body);
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ font-size: 15px;
 }
 
 /* Responsive section */
@@ -261,7 +285,7 @@ form button{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: rgb(93, 93, 93);
+    color: var(--color-text-body);
     
 }
 
