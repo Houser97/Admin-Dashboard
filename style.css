@@ -268,3 +268,13 @@ form button{
     font-size: 20px;
     font-weight: 600;
 }
+
+.projects .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects .card .options{
+    align-self: flex-end;
+}
