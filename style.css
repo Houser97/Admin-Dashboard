@@ -2,6 +2,10 @@
     --blue-sky: #0ea5e9;
 }
 
+html{
+    height: 100vh;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Roboto:wght@300;400&display=swap');
 
 *{
@@ -195,18 +199,19 @@ form button{
 /*------contenedores interiores-------*/
 .project_container{
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 50px 1fr;
+    padding-right: 50px;
 }
 
 .body .left_sidebar{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr;
 }
 
 .body .left_sidebar .announcements_first,
 .body .left_sidebar .trending{
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 50px 1fr;
 }
 
 .title_trending,
@@ -214,4 +219,14 @@ form button{
 .title_projects{
     align-self: center;
     justify-self: flex-start;
+}
+
+.body_announcements,
+.body_trending{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
