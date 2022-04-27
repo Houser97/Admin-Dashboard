@@ -306,6 +306,9 @@ form button{
 
 .projects .card .options{
     align-self: flex-end;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .projects .card .title_text{
