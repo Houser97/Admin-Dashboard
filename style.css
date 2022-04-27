@@ -80,6 +80,7 @@ html{
 .container .search{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /*--------- search bar ---------*/
@@ -91,6 +92,7 @@ form{
     align-items: center;
     border-radius: 60px;
     padding: 3px 11px;
+    height: 25px;
 }
 
 input{
@@ -121,14 +123,35 @@ form button{
 
 .top_part .search .icons_header{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 30px;
+    margin-right: 30px;
     flex: 1;
-    gap: 15px;
+    gap: 20px;
 }
 
+.top_part .search .icons_header .icon{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.icons_header img{
+    width: 40px;
+    height: 40px;
+}
+
+.top_part_second_part img{
+    width: 50px;
+    height: 50px;
+}
+
+.top_part .search .icons_header .name{
+    font-size: 20px;
+    font-weight: 600;
+}
 /*---------------------HEADER section 2------------------------*/
 
 .container .top_part_second_part{
@@ -316,3 +339,4 @@ form button{
     flex-direction: column;
     gap: 5px;
 }
+
